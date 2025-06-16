@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navigation from "./components/Navigation";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "jmoyson.me - Indie maker, Full-time dad",
@@ -40,6 +41,11 @@ export default function RootLayout({
             </p>
           </div>
         </footer>
+        <Script
+          defer
+          src="https://umami.jmoyson.dev/script.js"
+          data-website-id="fd2d8374-7c7d-440f-9ca6-ac631ca45cc8"
+        />
       </body>
     </html>
   );
